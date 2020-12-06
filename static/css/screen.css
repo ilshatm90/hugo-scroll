@@ -180,12 +180,12 @@ a {
 }
 
 a:hover {
-  color: #86c440;
+  color: #a2ffef;
 }
 
 a.btn {
   text-decoration: none;
-  background-color: #9fd067;
+  background-color: #3b9c8d;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   color: white;
@@ -204,7 +204,7 @@ a.btn {
 }
 
 a.btn:hover {
-  background: #86c440;
+  background: #a2ffef;
 }
 
 #header-arrow {
@@ -411,7 +411,7 @@ table table table {
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-  background-color: #f6f6f6;
+  background-color: #3b9c8d;
 }
 
 table.plain {
@@ -473,7 +473,7 @@ ul li {
   margin-bottom: 0rem;
   text-align: center;
   color: #fff;
-  background: #b80135 no-repeat center center;
+  background: #6fcdbd no-repeat center center;
   background-size: cover;
 }
 
@@ -521,7 +521,7 @@ ul li {
   position: relative;
 }
 .post-holder.odd {
-  background: #b80135;
+  background: #6fcdbd;
   color: white;
 }
 
@@ -563,10 +563,10 @@ a.fn-item {
   color: white;
 }
 a.fn-item:hover {
-  color: #9fd067;
+  color: #3b9c8d;
 }
 a.fn-item.active {
-  color: #86c440;
+  color: #a2ffef;
   opacity: 1;
 }
 
