@@ -1,11 +1,14 @@
 {{ define "main" }}
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $sections := $headless.Resources.ByType "page" }}
-<header id="site-head" {{ with .Params.header_image }}style="background-image: url({{ . }})"{{ end }}>
+<!-- <header id="site-head" {{ with .Params.header_image }}style="background-image: url({{ . }})"{{ end }}> -->
+<header id="site-head">
     <div class="vertical">
         <div id="site-head-content" class="inner">
-
-            {{ with .Params.header_headline }}<h1 class="blog-title">{{ . }}</h1>{{ end }}
+<!-- aspect-ratio: 863/180;  height: auto; -->
+            <!-- <img {{ with .Params.header_image }}src="{{ . }}"{{ end }} style="width: 100%; height: attr(width) * 180 / 863;"> -->
+            <img srcset="images/logo_700.png 700w, images/logo_400.png 400w" src="images/logo_700.png"  sizes="(min-width: 327px) 700px, 400px" style=" max-width: 100%; height: auto;">
+            <!-- {{ with .Params.header_headline }}<h1 class="blog-title">{{ . }}</h1>{{ end }} -->
             {{ with .Params.header_subheadline }}<h2 class="blog-description">{{ . }}</h2>{{ end }}
 
             {{ range where $sections ".Params.header_menu" "eq" true }}
