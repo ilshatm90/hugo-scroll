@@ -7,13 +7,16 @@
         <div id="site-head-content" class="inner">
 <!-- aspect-ratio: 863/180;  height: auto; -->
             <!-- <img {{ with .Params.header_image }}src="{{ . }}"{{ end }} style="width: 100%; height: attr(width) * 180 / 863;"> -->
-            <img srcset="images/logo_700.png 700w, images/logo_400.png 400w" src="images/logo_700.png"  sizes="(min-width: 327px) 700px, 400px" style=" max-width: 100%; height: auto;">
+            <img srcset="images/logo_550.png 550w, images/logo_310.png 310w" src="images/logo_550.png"  sizes="(min-width: 327px) 550px, 310px" style=" max-width: 100%; height: auto;">
+            <br>
             <!-- {{ with .Params.header_headline }}<h1 class="blog-title">{{ . }}</h1>{{ end }} -->
             {{ with .Params.header_subheadline }}<h2 class="blog-description">{{ . }}</h2>{{ end }}
 
             {{ range where $sections ".Params.header_menu" "eq" true }}
                  <a class='btn site-menu' data-title-anchor='{{ anchorize .Title }}'>{{ .Title }}</a>
             {{ end }}
+            <a class='btn site-menu' href="https://www.instagram.com/uzi_kazan/" target="_blank">Instagramm</a>
+            <a class='btn site-menu' href="https://booking.medlock.ru/?hash=2093974f2ce99ff64052d60c719af90b" target="_blank">Записаться на прием</a>
             <i id='header-arrow' class="fa fa-angle-down"></i>
         </div>
     </div>
